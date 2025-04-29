@@ -3,14 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PREHENDERE</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery e Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <style> 
+
+     body {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      }
+
+     .keyframes {
+      margin-left: 40px;         /* recuo para a direita */
+      padding: 10px 20px;        /* espaço interno */
+      background-color: #f2f2f2; /* cor de fundo cinza claro */
+      border-left: 4px solid #6a0dad; /* linha lateral roxa */
+      font-family: Consolas, monospace; /* fonte monoespaçada */
+      border-radius: 8px;         /* cantos arredondados */
+      }
+
+     h1 {
+      font-weight: normal;
+      font-family: Arial, sans-serif;
+      font-size: 40px; /* Aumenta o tamanho do título */
+      text-align: center; /* (opcional) centraliza o título */
+      }
+
+     h2 {
+      font-weight: normal;
+      font-family: Arial, sans-serif;
+      font-size: 30px; /* Menor que o h1 */
+      text-align: left;
+      margin-top: 20px;
+      }
+
+     p  {
+      font-family: Arial, sans-serif;
+      font-size: 20px; /* Aumenta o tamanho do parágrafo */
+      text-align: center; /* (opcional) centraliza o parágrafo */
+      width: 80%; /* (opcional) deixa o texto mais organizado */
+      margin: 20px auto; /* (opcional) centraliza o parágrafo */
+      }
+
+     .container {
+      display: flex; /* Habilita o flexbox */
+      justify-content: center; /* Centraliza o círculo horizontalmente */
+      align-items: center; /* (opcional) Centraliza o círculo verticalmente */
+      height: 400px; /* Altura suficiente para o círculo se mover */
+      position: relative;
+      }
+
+     #anima-div {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background: #cc6ffc;
+      position: relative;
+      animation: mov-div 3000ms infinite alternate; /* importante para o movimento funcionar */
+      animation-timing-function: ease-in-out; /* suaviza o movimento */
+      }
+
+     @keyframes mov-div {
+
+      0% {
+        margin-left: 0;
+        margin-top: 0;
+        background: #b5ff4e81;
+      }
+      25% {
+        margin-left: 200px;
+        margin-top: 0;
+        background: #f89d0b;
+      }
+      50% {
+        margin-left: 200px;
+        margin-top: 200px;
+        background: #293e07;
+      }
+      75% {
+        margin-left: 0;
+        margin-top: 200px;
+        background: #f6ff00;
+      }
+      100% {
+        margin-left: 0;
+        margin-top: 0;
+        background: #590606;
+      }
+      }
+
+ </style>
+
 </head>
 <body>
-    
 
-    <h1> Primeira versão <h1>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">PREHENDERE</a>
+          </div>
+          <ul class="nav navbar-nav">git
+            <li class="active"><a href="#">Sintagxes</a></li>
+            <li><a href="#">Tags</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+      </nav>
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repellat illum dolorum vitae ea iure, totam suscipit laborum vero, beatae consectetur quas quis non facere placeat saepe sint expedita fugit!
+    <h1> Usando elementos do HTML no seu código </h1>
+        
+      <h2> Keyframes </h2>
+
+      <p>
+        Fazendo uso do elemento abaixo é possível fazer com que o círculo se mova de forma suave:
+      </p>
+      
+      <div class="keyframes">
+        <p><code>animation: mov-div 3000ms" infinite alternate;</code> — importante para o movimento funcionar.</p>
+        <p><code>animation-timing-function: ease-in-out;</code> — suaviza o movimento.</p>
+      </div>
+       <div class="container">
+
+     <div id="anima-div"></div>
 
 </body>
 </html>
