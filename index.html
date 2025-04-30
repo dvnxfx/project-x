@@ -6,115 +6,44 @@
     <title>PREHENDERE</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <!-- jQuery e Bootstrap JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
- <style> 
-
-     body {
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      }
-
-     .keyframes {
-      margin-left: 40px;         /* recuo para a direita */
-      padding: 10px 20px;        /* espaço interno */
-      background-color: #f2f2f2; /* cor de fundo cinza claro */
-      border-left: 4px solid #6a0dad; /* linha lateral roxa */
-      font-family: Consolas, monospace; /* fonte monoespaçada */
-      border-radius: 8px;         /* cantos arredondados */
-      }
-
-     h1 {
-      font-weight: normal;
-      font-family: Arial, sans-serif;
-      font-size: 40px; /* Aumenta o tamanho do título */
-      text-align: center; /* (opcional) centraliza o título */
-      }
-
-     h2 {
-      font-weight: normal;
-      font-family: Arial, sans-serif;
-      font-size: 30px; /* Menor que o h1 */
-      text-align: left;
-      margin-top: 20px;
-      }
-
-     p  {
-      font-family: Arial, sans-serif;
-      font-size: 20px; /* Aumenta o tamanho do parágrafo */
-      text-align: center; /* (opcional) centraliza o parágrafo */
-      width: 80%; /* (opcional) deixa o texto mais organizado */
-      margin: 20px auto; /* (opcional) centraliza o parágrafo */
-      }
-
-     .container {
-      display: flex; /* Habilita o flexbox */
-      justify-content: center; /* Centraliza o círculo horizontalmente */
-      align-items: center; /* (opcional) Centraliza o círculo verticalmente */
-      height: 400px; /* Altura suficiente para o círculo se mover */
-      position: relative;
-      }
-
-     #anima-div {
-      height: 250px;
-      width: 250px;
-      border-radius: 50%;
-      background: #cc6ffc;
-      position: relative;
-      animation: mov-div 3000ms infinite alternate; /* importante para o movimento funcionar */
-      animation-timing-function: ease-in-out; /* suaviza o movimento */
-      }
-
-     @keyframes mov-div {
-
-      0% {
-        margin-left: 0;
-        margin-top: 0;
-        background: #b5ff4e81;
-      }
-      25% {
-        margin-left: 200px;
-        margin-top: 0;
-        background: #f89d0b;
-      }
-      50% {
-        margin-left: 200px;
-        margin-top: 200px;
-        background: #293e07;
-      }
-      75% {
-        margin-left: 0;
-        margin-top: 200px;
-        background: #f6ff00;
-      }
-      100% {
-        margin-left: 0;
-        margin-top: 0;
-        background: #590606;
-      }
-      }
-
- </style>
-
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">PREHENDERE</a>
-          </div>
-          <ul class="nav navbar-nav">git
-            <li class="active"><a href="#">Sintagxes</a></li>
-            <li><a href="#">Tags</a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid bg-danger"> <!-- (danger=vermelho) essa div class da cor a navbar -->
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sobre.html">HTML</a></li>
+              <li><a class="dropdown-item" href="#">SINTAXES</a></li>
+              <li><a class="dropdown-item" href="#">AAAAAA</a></li>
+              <li><a class="dropdown-item" href="#">Sobre as desenvolvedoras</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <h1> Usando elementos do HTML no seu código </h1>
         
@@ -131,6 +60,7 @@
        <div class="container">
 
      <div id="anima-div"></div>
-
+     
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>
